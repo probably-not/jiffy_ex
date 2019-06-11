@@ -1,16 +1,16 @@
-defmodule Jiffex.MixProject do
+defmodule JiffyEx.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :jiffex,
+      app: :jiffy_ex,
       version: "0.1.0",
       elixir: "~> 1.8",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       package: package(),
-      name: "Jiffex",
-      source_url: "https://github.com/coby-spotim/jiffex",
+      name: "JiffyEx",
+      source_url: "https://github.com/coby-spotim/jiffy_ex",
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
       test_coverage: [tool: ExCoveralls],
@@ -21,7 +21,7 @@ defmodule Jiffex.MixProject do
         "coveralls.html": :test
       ],
       # The main page in the docs
-      docs: [main: "Jiffex", extras: ["README.md"]],
+      docs: [main: "JiffyEx", extras: ["README.md"]],
       dialyzer: [plt_add_deps: :transitive]
     ]
   end
@@ -54,7 +54,7 @@ defmodule Jiffex.MixProject do
       # These are the default files included in the package
       files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Coby Benveniste"],
-      links: %{"GitHub" => "https://github.com/coby-spotim/jiffex"},
+      links: %{"GitHub" => "https://github.com/coby-spotim/jiffy_ex"},
       licenses: ["MIT License"]
     ]
   end

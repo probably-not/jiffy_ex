@@ -1,9 +1,9 @@
-defmodule Jiffex do
+defmodule JiffyEx do
   @moduledoc """
   An Elixir module that wraps the Erlang jiffy library.
   """
 
-  alias Jiffex.Opts
+  alias JiffyEx.Opts
 
   @spec encode!(term, Keyword.t()) :: String.t() | no_return
   def encode!(value, opts \\ []) do

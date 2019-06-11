@@ -1,6 +1,6 @@
-defmodule JiffexOptsTest do
+defmodule JiffyExOptsTest do
   use ExUnit.Case
-  alias Jiffex.Opts
+  alias JiffyEx.Opts
   doctest Opts
 
   test "parse decode opts - all true" do

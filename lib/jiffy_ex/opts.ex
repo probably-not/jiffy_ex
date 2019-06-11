@@ -1,4 +1,4 @@
-defmodule Jiffex.Opts do
+defmodule JiffyEx.Opts do
   @moduledoc """
   A converter that converts between the standard Elixir Keyword List options that are typically passed to functions
   and the options that are passed to Erlang's jiffy library.
