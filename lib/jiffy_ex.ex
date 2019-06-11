@@ -19,14 +19,14 @@ defmodule JiffyEx do
 
   @spec encode(term, Keyword.t()) :: {:ok, String.t()} | {:error, Exception.t()}
   def encode(value, opts \\ []) do
-    encode!(value, opts)
+    {:ok, encode!(value, opts)}
   rescue
     exception -> {:error, exception}
   end
 
   @spec decode(iodata, Keyword.t()) :: {:ok, term} | {:error, Exception.t()}
   def decode(value, opts \\ []) do
-    decode!(value, opts)
+    {:ok, decode!(value, opts)}
   rescue
     exception -> {:error, exception}
   end
