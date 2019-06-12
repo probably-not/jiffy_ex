@@ -27,11 +27,25 @@ defmodule JiffyEx.Opts do
   @typep jiffy_opt :: atom | {atom, non_neg_integer | any}
   @typep jiffy_opts :: [jiffy_opt]
 
+  @doc """
+  Parses options for the `encode/2` function from a provided Elixir Keyword list into
+  a compatible list of options for jiffy.
+
+  This strips out any options that are not valid for jiffy's `encode/2` function
+  and then creates a list of atoms and tuples for jiffy to use.
+  """
   @spec parse_encode_opts(Keyword.t()) :: jiffy_opts
   def parse_encode_opts(opts) do
     parse(opts, @valid_encode_opts)
   end
 
+  @doc """
+  Parses options for the `decode/2` function from a provided Elixir Keyword list into
+  a compatible list of options for jiffy.
+
+  This strips out any options that are not valid for jiffy's `decode/2` function
+  and then creates a list of atoms and tuples for jiffy to use.
+  """
   @spec parse_decode_opts(Keyword.t()) :: jiffy_opts
   def parse_decode_opts(opts) do
     parse(opts, @valid_decode_opts)
