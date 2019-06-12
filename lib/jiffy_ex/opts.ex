@@ -8,7 +8,7 @@ defmodule JiffyEx.Opts do
     :return_maps,
     :use_nil,
     :return_trailer,
-    :dedup_keys,
+    :dedupe_keys,
     :copy_strings,
     :null_term,
     :bytes_per_iter,
