@@ -10,7 +10,7 @@ defmodule JiffyEx.MixProject do
       start_permanent: Mix.env() == :prod,
       package: package(),
       name: "JiffyEx",
-      source_url: "https://github.com/coby-spotim/jiffy_ex",
+      source_url: "https://github.com/probably-not/jiffy_ex",
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
       test_coverage: [tool: ExCoveralls],
@@ -54,7 +54,7 @@ defmodule JiffyEx.MixProject do
       # These are the default files included in the package
       files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Coby Benveniste"],
-      links: %{"GitHub" => "https://github.com/coby-spotim/jiffy_ex"},
+      links: %{"GitHub" => "https://github.com/probably-not/jiffy_ex"},
       licenses: ["MIT License"]
     ]
   end
